@@ -1,0 +1,17 @@
+<h2>Oringinal Text: </h2>
+<%=@text %>
+<p>-------------</p>
+<h2>Number of words: </h2>
+<%=@word_count %>
+<p>-------------</p>
+<h2>Estimated reading time: </h2>
+<p><%=@reading_time %> minutes estimated.</p>
+<p>-------------------------</p>
+<h2>Most used words: </h2>
+<ul>
+	<%@most_used_words.each do |word| %>
+	<li><%=word %></li>
+	<%end %>
+</ul>
+
+<%= link_to "Home", "/" %>
